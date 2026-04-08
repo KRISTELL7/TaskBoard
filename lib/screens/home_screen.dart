@@ -55,7 +55,7 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 4),
-          // Lista de tareas
+          
           Expanded(
             child: ListView.builder(
               itemCount: provider.filteredTasks.length,
@@ -64,10 +64,10 @@ class HomeScreen extends StatelessWidget {
 
                 return TaskItem(
                   task: task,
-                  // El callback de eliminar ahora llama directamente al provider
+                  
                   onDelete: task.isCompleted
                       ? () {
-                          provider.deleteTask(task.id); // Borra la tarea
+                          provider.deleteTask(task.id); 
                         }
                       : null,
                 );
@@ -76,7 +76,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      // Botón agregar solo si filtro == "all"
+    
       floatingActionButton: provider.filter == "all"
           ? FloatingActionButton(
               onPressed: () async {
@@ -86,7 +86,7 @@ class HomeScreen extends StatelessWidget {
                 );
 
                 if (newTask != null) {
-                  provider.addTask(newTask); // Agrega tarea nueva
+                  provider.addTask(newTask); 
                 }
               },
               child: const Icon(Icons.add),

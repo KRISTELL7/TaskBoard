@@ -72,14 +72,14 @@ class TaskItem extends StatelessWidget {
                 );
               },
             ),
-            // Eliminar solo si completada
+            
             if (task.isCompleted)
               IconButton(
                 icon: Icon(Icons.delete, color: Colors.red),
                 onPressed: () {
                   provider.deleteCompleted(
                     task.id,
-                  ); // 🔹 llama a tu función async
+                  ); 
                 },
               ),
           ],

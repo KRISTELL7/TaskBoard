@@ -17,6 +17,6 @@ void main() {
     provider.tasks[0].isCompleted = true;
     provider.deleteCompleted(provider.tasks[0].id);
 
-    expect(provider.tasks.length, 0); // Debe estar vacía
+    expect(provider.tasks.length, 0); 
   });
 }
