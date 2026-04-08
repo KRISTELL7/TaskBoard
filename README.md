@@ -8,4 +8,4 @@ Es una aplicacion para gestionar tareas, en la cual se puede agregar,editar y el
 4. ejecutar con un emulador o dispositivo de prueba.
 
 #Emulador
-Para las pruebas utilice Android Studio(pixel 4), asi mismo para las evitar errores en las vistas utilice un dispositivo fisico(infinix 60).
+Para las pruebas utilice Android Studio(pixel 4), asi mismo para evitar errores en las vistas utilice un dispositivo fisico(infinix 60).
